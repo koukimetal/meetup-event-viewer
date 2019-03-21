@@ -1,0 +1,33 @@
+{
+  "name": "meetup-event-viewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:koukimetal/meetup-event-viewer.git",
+  "author": "comcometal <example@example.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/dateformat": "^3.0.0",
+    "@types/fs-extra": "^5.0.5",
+    "@types/node": "^11.11.4",
+    "@types/react": "^16.8.8",
+    "axios": "^0.18.0",
+    "dateformat": "^3.0.3",
+    "dotenv": "6.2.0",
+    "fs-extra": "^7.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "ts-loader": "^5.3.3",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.3.4000",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "build-back": "tsc -p src/back/tsconfig.json",
+    "watch-back": "tsc -w -p src/back/tsconfig.json",
+    "build-front": "webpack --mode=production",
+    "watch-front": "webpack-dev-server --content-base dist/"
+  }
+}
